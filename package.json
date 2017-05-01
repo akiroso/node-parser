@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/akiroso/node-parser/issues"
   },
-  "homepage": "https://github.com/akiroso/node-parser#readme"
+  "homepage": "https://github.com/akiroso/node-parser#readme",
+  "dependencies": {
+    "util": "^0.10.3"
+  }
 }
