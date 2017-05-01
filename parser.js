@@ -9,7 +9,8 @@ if (filename == module.filename) {
 		var i = item.split('/');
 		return i[i.length - 1];
 	});
-	console.log(util.format('Usage: %s <definitions.csv>', cmdline.join(' ')));
+	console.log(util.format('Usage: %s <path_to_log_file>', cmdline.join(' ')));
+	console.log('Check https://github.com/akiroso/node-parser/blob/master/README.md for more information');
 	process.exit();
 }
 
@@ -47,7 +48,7 @@ lineReader.on('close', function() {
 	orderedRequests = orderedRequests.sort(function(a, b) {
 		return b.total - a.total;
 	});
-	for (var i = 0; i < orderedRequests.length; i++) {
+	for (var i = 0; i < 3; i++) {
 		console.log(orderedRequests[i].url + ' - ' + orderedRequests[i].total);
 	}
 	// and then also print all the status and respective counters
