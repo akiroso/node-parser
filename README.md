@@ -2,6 +2,12 @@
 
 A simple javascript request log parser!
 
+# Installation
+
+The only requirement to run this parser is to have Node installed on the machine.
+
+You can get it here: https://nodejs.org/en/download/
+
 # Usage
 
 to run the parser just execute the following comand at the project's root folder:
